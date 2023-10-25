@@ -78,7 +78,7 @@ const GoogleMapsNearbyLocations = () => {
   };
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyAhTamZDM270ttltbvYowdqi8VXDLtX78A",
+    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY || "",
     libraries: ["places", "drawing", "geometry"],
   });
 
