@@ -1,0 +1,35 @@
+.map {
+  width: 100vw;
+  height: 100vh;
+
+  &__container {
+    display: block;
+
+    // div[role=dialog] {
+    //     display: none;
+    // }
+
+        div[class*=gm-style-iw-t]:nth-child(2) {
+            z-index: 1900;
+        }
+  }
+
+  &__nearby-locations {
+    position: fixed;
+    top: 10px;
+    right: 80px;
+    border: 1px solid #fafafa;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 7px;
+    background-color: bisque;
+    width: 200px;
+    z-index: 1900;
+  }
+}
+
+.location__container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
